@@ -1,0 +1,14 @@
+Json no permite comentarios porque son unos sin padre asi que lo pondre aqui.
+
+
+** TENER MUCHO CUIDADO EN COMO SE ESCRIBE ESTE JSON
+PORQUE SINO NO SE CREARA EL ITEM CORRECTAMENTE**
+
+{
+//De donde sale el item
+  "parent": "item/generated",
+  "textures": {
+   // Donde localiza el png del item
+    "layer0": "samod:item/zircon"
+  }
+}
