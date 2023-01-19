@@ -1,6 +1,7 @@
 package es.ferry.samod;
 
 import com.mojang.logging.LogUtils;
+import es.ferry.samod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,7 +19,7 @@ import org.slf4j.Logger;
 public class SaMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "SaMod";
+    public static final String MOD_ID = "samod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
@@ -36,6 +37,8 @@ public class SaMod
     public SaMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
