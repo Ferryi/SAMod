@@ -1,6 +1,7 @@
 package es.ferry.samod;
 
 import com.mojang.logging.LogUtils;
+import es.ferry.samod.block.ModBlocks;
 import es.ferry.samod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
@@ -39,6 +40,7 @@ public class SaMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
