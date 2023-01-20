@@ -1,10 +1,12 @@
 {
   "item.samod.zircon": "Zircon",
   "item.samod.raw_zircon": "Raw Zircon",
+  "item.samod.cubo_dg": "Cubo de lagrimas",
 
   "block.samod.zircon_block": "Block of Zircon",
   "block.samod.zircon_ore": "Zircon Ore",
   "block.samod.deep_zircon_ore": "Deep Zircon Ore",
+
 
   "itemGroup.samodtab": "Sa Mod Tab"
 }
