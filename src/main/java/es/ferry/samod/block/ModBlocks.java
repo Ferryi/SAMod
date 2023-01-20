@@ -1,6 +1,7 @@
 package es.ferry.samod.block;
 
 import es.ferry.samod.SaMod;
+import es.ferry.samod.block.custom.RaythunBlock;
 import es.ferry.samod.item.ModCreativeModeTab;
 import es.ferry.samod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -38,6 +39,9 @@ public class ModBlocks {
         registerBlockItem(name,toReturn,tab);
         return toReturn;
     }
+    public static final RegistryObject<Block> RAYTHUN_BLOCK = registerBlock("raythun_block",
+            () -> new RaythunBlock(BlockBehaviour.Properties.of(Material.ICE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SAMOD_TAB);
     public static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                                 CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
