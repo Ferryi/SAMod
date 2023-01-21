@@ -3,6 +3,8 @@
   "values": [
     "samod:zircon_ore",
     "samod:zircon_block",
-    "samod:deep_zircon_ore"
+    "samod:deep_zircon_ore",
+    "samod:zircon_lamp",
+    "samod:raythun_block"
   ]
 }
