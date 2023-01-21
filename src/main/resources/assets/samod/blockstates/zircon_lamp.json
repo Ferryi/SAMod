@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "samod:block/zircon_lamp_on"},
+    "lit=false": { "model": "samod:block/zircon_lamp_off"}
+  }
+}
