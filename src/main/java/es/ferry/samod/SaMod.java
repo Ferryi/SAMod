@@ -3,6 +3,8 @@ package es.ferry.samod;
 import com.mojang.logging.LogUtils;
 import es.ferry.samod.block.ModBlocks;
 import es.ferry.samod.item.ModItems;
+import es.ferry.samod.world.feature.ModConfiguredFeatures;
+import es.ferry.samod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -41,6 +43,9 @@ public class SaMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
