@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 150,
+  "experience": 0.8,
+  "group": "platita",
+  "ingredient": {
+    "item": "samod:raw_platita"
+  },
+  "result": "samod:platita"
+}

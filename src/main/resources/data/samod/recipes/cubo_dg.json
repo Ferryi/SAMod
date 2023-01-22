@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
-    "X#X",
-    "XXX"
+    "   ",
+    "# #",
+    " # "
   ],
   "key": {
     "#": {
-      "item": "minecraft:emerald"
-    },
-    "X": {
       "item": "samod:platita"
     }
   },
   "result": {
-    "item": "samod:raythun_block"
+    "item": "samod:cubo_dg"
   }
 }
