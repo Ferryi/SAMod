@@ -14,10 +14,10 @@ public class ModItems
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SaMod.MOD_ID);
 
-    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",
+    public static final RegistryObject<Item> PLATITA = ITEMS.register("platita",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB)));
 
-    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",
+    public static final RegistryObject<Item> RAW_PLATITA = ITEMS.register("raw_platita",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB)));
 
     public static final RegistryObject<Item> CUBO_DG = ITEMS.register("cubo_dg",

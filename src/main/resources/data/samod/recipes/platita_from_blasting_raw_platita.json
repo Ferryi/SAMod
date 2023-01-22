@@ -2,9 +2,9 @@
   "type": "minecraft:blasting",
   "cookingtime": 100,
   "experience": 0.8,
-  "group": "zircon",
+  "group": "platita",
   "ingredient": {
-    "item": "samod:raw_zircon"
+    "item": "samod:raw_platita"
   },
-  "result": "samod:zircon"
+  "result": "samod:platita"
 }

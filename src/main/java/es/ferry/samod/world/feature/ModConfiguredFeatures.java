@@ -20,12 +20,12 @@ public class ModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?,?>> CONFIGURED_FEATURE_DEFERRED_REGISTER =
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, SaMod.MOD_ID);
 
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_ZIRCON_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ZIRCON_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES,ModBlocks.DEEP_ZIRCON_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_PLATITA_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.PLATITA_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES,ModBlocks.DEEP_PLATITA_ORE.get().defaultBlockState())));
 
-    public static final RegistryObject<ConfiguredFeature<?,?>> ZIRCON_ORE = CONFIGURED_FEATURE_DEFERRED_REGISTER.register("zircon_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(OVERWORLD_ZIRCON_ORES.get(), 10)));
+    public static final RegistryObject<ConfiguredFeature<?,?>> PLATITA_ORE = CONFIGURED_FEATURE_DEFERRED_REGISTER.register("platita_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE,new OreConfiguration(OVERWORLD_PLATITA_ORES.get(), 10)));
 
 
     public static void register(IEventBus eventBus){

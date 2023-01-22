@@ -7,10 +7,10 @@
   ],
   "key": {
     "#": {
-      "item": "samod:zircon"
+      "item": "samod:platita"
     }
   },
   "result": {
-    "item": "samod:zircon_block"
+    "item": "samod:platita_block"
   }
 }

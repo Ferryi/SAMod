@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "samod:zircon_block"
+      "item": "samod:platita_block"
     }
   ],
   "result": {
-    "item": "samod:zircon",
+    "item": "samod:platita",
     "count": 9
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "samod:block/zircon_ore"
+    "all": "samod:block/deep_platita_ore"
   }
 }

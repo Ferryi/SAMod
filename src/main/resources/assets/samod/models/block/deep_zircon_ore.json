@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "samod:block/deep_zircon_ore"
-  }
-}

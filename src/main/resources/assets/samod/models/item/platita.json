@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "samod:item/zircon"
+    "layer0": "samod:item/platita"
   }
 }

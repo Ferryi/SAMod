@@ -1,10 +1,9 @@
 {
   "replace": false,
   "values": [
-    "samod:zircon_ore",
-    "samod:zircon_block",
-    "samod:deep_zircon_ore",
-    "samod:zircon_lamp",
+    "samod:platita_ore",
+    "samod:platita_block",
+    "samod:deep_platita_ore",
     "samod:raythun_block"
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "item.samod.zircon": "Zircon",
-  "item.samod.raw_zircon": "Raw Zircon",
+  "item.samod.platita": "Platita",
+  "item.samod.raw_platita": "Mena de Platita",
   "item.samod.cubo_dg": "Cubo de lagrimas",
 
-  "block.samod.zircon_block": "Block of Zircon",
-  "block.samod.zircon_ore": "Zircon Ore",
-  "block.samod.deep_zircon_ore": "Deep Zircon Ore",
+  "block.samod.platita_block": "Bloque de platita",
+  "block.samod.platita_ore": "Platita",
+  "block.samod.deep_platita_ore": "Bloque de Platita Profundo",
   "block.samod.raythun_block": "Bloque del Raythun",
-  "block.samod.zircon_lamp": "Zircon Lamp",
+
 
 
 

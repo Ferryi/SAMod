@@ -2,7 +2,6 @@ package es.ferry.samod.block;
 
 import es.ferry.samod.SaMod;
 import es.ferry.samod.block.custom.RaythunBlock;
-import es.ferry.samod.block.custom.ZirconLamp;
 import es.ferry.samod.item.ModCreativeModeTab;
 import es.ferry.samod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -24,15 +23,15 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SaMod.MOD_ID);
 
-    public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
+    public static final RegistryObject<Block> PLATITA_BLOCK = registerBlock("platita_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SAMOD_TAB);
 
-    public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
+    public static final RegistryObject<Block> PLATITA_ORE = registerBlock("platita_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.SAMOD_TAB);
 
-    public static final RegistryObject<Block> DEEP_ZIRCON_ORE = registerBlock("deep_zircon_ore",
+    public static final RegistryObject<Block> DEEP_PLATITA_ORE = registerBlock("deep_platita_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.SAMOD_TAB);
 
@@ -40,10 +39,7 @@ public class ModBlocks {
             () -> new RaythunBlock(BlockBehaviour.Properties.of(Material.ICE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SAMOD_TAB);
 
-    public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
-            () -> new ZirconLamp(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()
-                    .lightLevel(state ->state.getValue(ZirconLamp.LIT) ? 15:0)), ModCreativeModeTab.SAMOD_TAB);
+
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name,toReturn,tab);

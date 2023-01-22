@@ -16,8 +16,8 @@ public class ModPlacedFeatures {
 
 
 
-    public static final RegistryObject<PlacedFeature> ZIRCON_ORE_PLACED = PLACED_FEATURE_DEFERRED_REGISTER.register("zircon_ore_placed",
-            ()-> new PlacedFeature(ModConfiguredFeatures.ZIRCON_ORE.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> PLATITA_ORE_PLACED = PLACED_FEATURE_DEFERRED_REGISTER.register("platita_ore_placed",
+            ()-> new PlacedFeature(ModConfiguredFeatures.PLATITA_ORE.getHolder().get(),
                     commonOrePlacemente(7,
                             HeightRangePlacement.triangle(VerticalAnchor.absolute(-120),VerticalAnchor.absolute(120)))));
 

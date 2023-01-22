@@ -9,6 +9,6 @@ PORQUE SINO NO SE CREARA EL ITEM CORRECTAMENTE**
   "parent": "item/generated",
   "textures": {
    // Donde localiza el png del item
-    "layer0": "samod:item/zircon"
+    "layer0": "samod:item/platita"
   }
 }

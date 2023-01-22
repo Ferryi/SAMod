@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab SAMOD_TAB = new CreativeModeTab("samodtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.ZIRCON.get());
+            return new ItemStack(ModItems.PLATITA.get());
         }
     };
 }
