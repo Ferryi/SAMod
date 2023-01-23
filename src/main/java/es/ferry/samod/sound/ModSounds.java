@@ -15,6 +15,10 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> DG_LLOROS =
             registerSoundEvent("dg_lloros");
+    public static final RegistryObject<SoundEvent> EA_LLOROS =
+            registerSoundEvent("ea_lloros");
+    public static final RegistryObject<SoundEvent> NPC_SOUND =
+            registerSoundEvent("npc_sound");
 
     public static final RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENT_DEFERRED_REGISTER.register(name, () -> new SoundEvent(new ResourceLocation(SaMod.MOD_ID, name)));

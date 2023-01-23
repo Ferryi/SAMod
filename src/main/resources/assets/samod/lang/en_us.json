@@ -2,6 +2,8 @@
   "item.samod.platita": "Platita",
   "item.samod.raw_platita": "Mena de Platita",
   "item.samod.cubo_dg": "Cubo de lagrimas",
+  "item.samod.ea_logo": "Logo de EA",
+  "item.samod.demon_logo": "Logo de Demon",
 
   "block.samod.platita_block": "Bloque de platita",
   "block.samod.platita_ore": "Platita",
@@ -9,7 +11,8 @@
   "block.samod.raythun_block": "Bloque del Raythun",
 
   "sounds.samod.dg_lloros": "DG llorando como una perra",
-
+  "sounds.samod.ea_lloros": "A Jasaal le da igual",
+  "sounds.samod.npc_sound": "BIP BOP",
 
 
   "itemGroup.samodtab": "Sa Mod Tab"

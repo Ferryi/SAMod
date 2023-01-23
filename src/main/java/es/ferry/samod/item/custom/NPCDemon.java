@@ -1,5 +1,6 @@
 package es.ferry.samod.item.custom;
 
+
 import es.ferry.samod.sound.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -15,24 +16,18 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CuboDG extends Item {
-    public CuboDG(Properties properties) {
+public class NPCDemon extends Item {
+    public NPCDemon(Properties properties) {
         super(properties);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
 
-        if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
-            //Dice que DG es un lloron
-            outputLinea(player);
-
-
-            // Poner cooldown
-            player.getCooldowns().addCooldown(this,20);
-        }
-        //Sonido de DG
-        lloros(player);
+        //Poner cooldown
+        player.getCooldowns().addCooldown(this,20);
+        //A jasaal le da igual
+        sound(player);
 
         return super.use(level, player, hand);
     }
@@ -40,7 +35,7 @@ public class CuboDG extends Item {
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         if(Screen.hasShiftDown()){
-            components.add(Component.literal("Dale al Click derecho para saber de quien es este cubo").withStyle(ChatFormatting.AQUA));
+            components.add(Component.literal("Dale al Click derecho para saber que es esto").withStyle(ChatFormatting.YELLOW));
         }else{
             components.add(Component.literal("Dale al shift para mas info").withStyle(ChatFormatting.BLUE));
         }
@@ -48,11 +43,9 @@ public class CuboDG extends Item {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
 
-    private void outputLinea(Player player){
-        player.sendSystemMessage(Component.literal("Este cubo se ha llenado con lagrimas de DG14 jugando al LOL"));
-    }
-
-    private void lloros(Player player){
-        player.playSound(ModSounds.DG_LLOROS.get(), 1.0F, 1.0F);
+    private void sound(Player player){
+        player.playSound(ModSounds.NPC_SOUND.get(), 1.0F, 1.0F);
     }
 }
+
+

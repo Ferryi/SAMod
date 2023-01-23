@@ -4,5 +4,17 @@
     "sounds": [
       "samod:dg_lloros"
     ]
+  },
+  "ea_lloros": {
+    "subtitle": "sounds.samod.ea_lloros",
+    "sounds": [
+      "samod:ea_lloros"
+    ]
+  },
+  "npc_sound": {
+    "subtitle": "sounds.samod.npc_sound",
+    "sounds": [
+      "samod:npc_sound"
+    ]
   }
 }
