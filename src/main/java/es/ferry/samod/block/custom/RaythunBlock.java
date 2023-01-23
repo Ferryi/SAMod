@@ -30,7 +30,7 @@ public class RaythunBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos blockPos, BlockState blockState, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 600));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 100));
         }
 
         super.stepOn(level, blockPos, blockState, entity);

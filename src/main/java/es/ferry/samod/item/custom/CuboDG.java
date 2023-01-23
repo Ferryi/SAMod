@@ -1,5 +1,6 @@
 package es.ferry.samod.item.custom;
 
+import es.ferry.samod.sound.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -25,9 +26,12 @@ public class CuboDG extends Item {
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
             //Dice que DG es un lloron
             outputLinea(player);
+            //Sonido de DG
+
             // Poner cooldown
             player.getCooldowns().addCooldown(this,20);
         }
+        lloros(player);
 
         return super.use(level, player, hand);
     }
@@ -45,5 +49,9 @@ public class CuboDG extends Item {
 
     private void outputLinea(Player player){
         player.sendSystemMessage(Component.literal("Este cubo se ha llenado con lagrimas de DG14 jugando al LOL"));
+    }
+
+    private void lloros(Player player){
+        player.playSound(ModSounds.DG_LLOROS.get(), 1.0F, 1.0F);
     }
 }
