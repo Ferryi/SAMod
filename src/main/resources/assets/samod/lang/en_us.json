@@ -4,6 +4,9 @@
   "item.samod.cubo_dg": "Cubo de lagrimas",
   "item.samod.ea_logo": "Logo de EA",
   "item.samod.demon_logo": "Logo de Demon",
+  "item.samod.cabeza_gessa": "Cabeza de perro",
+  "item.samod.demon_logo": "Logo de Demon",
+  "item.samod.platano": "Banana",
 
   "block.samod.platita_block": "Bloque de platita",
   "block.samod.platita_ore": "Platita",
@@ -13,6 +16,8 @@
   "sounds.samod.dg_lloros": "DG llorando como una perra",
   "sounds.samod.ea_lloros": "A Jasaal le da igual",
   "sounds.samod.npc_sound": "BIP BOP",
+  "sounds.samod.ladrido": "Escuchas un chihuahua llorando",
+  "sounds.samod.mono": "Donkey?",
 
 
   "itemGroup.samodtab": "Sa Mod Tab"

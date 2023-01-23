@@ -16,5 +16,23 @@
     "sounds": [
       "samod:npc_sound"
     ]
+  },
+  "risa_moro": {
+    "subtitle": "sounds.samod.risa_moro",
+    "sounds": [
+      "samod:risa_moro"
+    ]
+  },
+  "ladrido": {
+    "subtitle": "sounds.samod.ladrido",
+    "sounds": [
+      "samod:ladrido"
+    ]
+  },
+  "mono": {
+    "subtitle": "sounds.samod.mono",
+    "sounds": [
+      "samod:mono"
+    ]
   }
 }

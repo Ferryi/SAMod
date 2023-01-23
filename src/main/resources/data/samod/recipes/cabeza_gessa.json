@@ -10,10 +10,10 @@
       "item": "samod:platita"
     },
     "X": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:bone"
     }
   },
   "result": {
-    "item": "samod:demon_logo"
+    "item": "samod:cabeza_gessa"
   }
 }

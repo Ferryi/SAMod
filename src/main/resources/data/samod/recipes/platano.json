@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#X#",
-    "###"
+    "  X",
+    "X#X",
+    " X "
   ],
   "key": {
     "#": {
       "item": "samod:platita"
     },
     "X": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:yellow_dye"
     }
   },
   "result": {
-    "item": "samod:demon_logo"
+    "item": "samod:platano"
   }
 }

@@ -1,6 +1,5 @@
 package es.ferry.samod.item.custom;
 
-
 import es.ferry.samod.sound.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -16,8 +15,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class NPCDemon extends Item {
-    public NPCDemon(Properties properties) {
+public class Platano extends Item {
+    public Platano(Properties properties) {
         super(properties);
     }
 
@@ -26,7 +25,7 @@ public class NPCDemon extends Item {
 
         //Poner cooldown
         player.getCooldowns().addCooldown(this,20);
-        // bip bop
+        //GUA
         sound(player);
 
         return super.use(level, player, hand);
@@ -35,7 +34,7 @@ public class NPCDemon extends Item {
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         if(Screen.hasShiftDown()){
-            components.add(Component.literal("Dale al Click derecho para saber que es esto").withStyle(ChatFormatting.YELLOW));
+            components.add(Component.literal("Dale al Click derecho ver como hacer").withStyle(ChatFormatting.YELLOW));
         }else{
             components.add(Component.literal("Dale al shift para mas info").withStyle(ChatFormatting.BLUE));
         }
@@ -44,8 +43,7 @@ public class NPCDemon extends Item {
     }
 
     private void sound(Player player){
-        player.playSound(ModSounds.NPC_SOUND.get(), 1.0F, 1.0F);
+        player.playSound(ModSounds.MONO.get(), 1.0F, 1.0F);
     }
 }
-
 

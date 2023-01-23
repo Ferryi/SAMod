@@ -1,5 +1,6 @@
 package es.ferry.samod.block.custom;
 
+import es.ferry.samod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -24,7 +25,9 @@ public class RaythunBlock extends Block {
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         if(level.isClientSide && interactionHand == InteractionHand.MAIN_HAND)
         player.sendSystemMessage(Component.literal("Bloque de Raythun, subete para incrementar tu puta suerte como la RATA de Morothun"));
+        sound(player);
         return super.use(blockState, level, blockPos, player, interactionHand, blockHitResult);
+
     }
 
     @Override
@@ -32,7 +35,10 @@ public class RaythunBlock extends Block {
         if(entity instanceof LivingEntity livingEntity){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 100));
         }
-
+        sound(entity);
         super.stepOn(level, blockPos, blockState, entity);
+    }
+    private void sound(Entity entity){
+        entity.playSound(ModSounds.RISA_MORO.get(), 1.0F, 1.0F);
     }
 }

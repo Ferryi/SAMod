@@ -1,9 +1,7 @@
 package es.ferry.samod.item;
 
 import es.ferry.samod.SaMod;
-import es.ferry.samod.item.custom.CuboDG;
-import es.ferry.samod.item.custom.EaJasaal;
-import es.ferry.samod.item.custom.NPCDemon;
+import es.ferry.samod.item.custom.*;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +26,10 @@ public class ModItems
             () -> new EaJasaal(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
     public static final RegistryObject<Item> DEMON_LOGO = ITEMS.register("demon_logo",
             () -> new NPCDemon(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> CABEZA_GESSA = ITEMS.register("cabeza_gessa",
+            () -> new CabezaGessa(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> PLATANO = ITEMS.register("platano",
+            () -> new Platano(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
