@@ -35,7 +35,7 @@ public class RaythunBlock extends Block {
         if(entity instanceof LivingEntity livingEntity){
             livingEntity.addEffect(new MobEffectInstance(MobEffects.LUCK, 100));
         }
-        sound(entity);
+
         super.stepOn(level, blockPos, blockState, entity);
     }
     private void sound(Entity entity){
