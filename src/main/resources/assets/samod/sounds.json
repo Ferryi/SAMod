@@ -34,5 +34,11 @@
     "sounds": [
       "samod:mono"
     ]
+  },
+  "kazan_sound": {
+    "subtitle": "sounds.samod.kazan_sound",
+    "sounds": [
+      "samod:kazan_sound"
+    ]
   }
 }

@@ -25,6 +25,8 @@ public class ModSounds {
             registerSoundEvent("ladrido");
     public static final RegistryObject<SoundEvent> MONO =
             registerSoundEvent("mono");
+    public static final RegistryObject<SoundEvent> KAZAN_SOUND =
+            registerSoundEvent("kazan_sound");
 
     public static final RegistryObject<SoundEvent> registerSoundEvent(String name){
         return SOUND_EVENT_DEFERRED_REGISTER.register(name, () -> new SoundEvent(new ResourceLocation(SaMod.MOD_ID, name)));

@@ -30,6 +30,8 @@ public class ModItems
             () -> new CabezaGessa(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
     public static final RegistryObject<Item> PLATANO = ITEMS.register("platano",
             () -> new Platano(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+    public static final RegistryObject<Item> KAZAN = ITEMS.register("kazan",
+            () -> new Kazan(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
