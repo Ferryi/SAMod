@@ -2,6 +2,7 @@ package es.ferry.samod;
 
 import com.mojang.logging.LogUtils;
 import es.ferry.samod.block.ModBlocks;
+import es.ferry.samod.item.ModCreativeModeTab;
 import es.ferry.samod.item.ModItems;
 import es.ferry.samod.sound.ModSounds;
 import es.ferry.samod.world.feature.ModConfiguredFeatures;
@@ -9,6 +10,7 @@ import es.ferry.samod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -45,8 +47,8 @@ public class SaMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModConfiguredFeatures.register(modEventBus);
-        ModPlacedFeatures.register(modEventBus);
+        //ModConfiguredFeatures.register(modEventBus);
+        //ModPlacedFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -54,6 +56,8 @@ public class SaMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        modEventBus.addListener(this::addCreative);
 
         //^^Ejemplos de Forge. Se guardan por si acaso
         /*
@@ -69,6 +73,19 @@ public class SaMod
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+    }
+    private void addCreative(CreativeModeTabEvent.BuildContents event){
+        if(event.getTab() == ModCreativeModeTab.SAMOD_TAB){
+            event.accept(ModItems.PLATITA);
+            event.accept(ModItems.CABEZA_GESSA);
+            event.accept(ModItems.CUBO_DG);
+            event.accept(ModItems.EA_LOGO);
+            event.accept(ModItems.DEMON_LOGO);
+            event.accept(ModItems.KAZAN);
+            event.accept(ModItems.RAW_PLATITA);
+            event.accept(ModItems.PLATANO);
+
+        }
     }
 
 

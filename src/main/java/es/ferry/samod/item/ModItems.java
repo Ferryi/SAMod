@@ -15,23 +15,23 @@ public class ModItems
             DeferredRegister.create(ForgeRegistries.ITEMS, SaMod.MOD_ID);
 
     public static final RegistryObject<Item> PLATITA = ITEMS.register("platita",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB)));
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_PLATITA = ITEMS.register("raw_platita",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB)));
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CUBO_DG = ITEMS.register("cubo_dg",
-            () -> new CuboDG(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new CuboDG(new Item.Properties()));
     public static final RegistryObject<Item> EA_LOGO = ITEMS.register("ea_logo",
-            () -> new EaJasaal(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new EaJasaal(new Item.Properties()));
     public static final RegistryObject<Item> DEMON_LOGO = ITEMS.register("demon_logo",
-            () -> new NPCDemon(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new NPCDemon(new Item.Properties()));
     public static final RegistryObject<Item> CABEZA_GESSA = ITEMS.register("cabeza_gessa",
-            () -> new CabezaGessa(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new CabezaGessa(new Item.Properties()));
     public static final RegistryObject<Item> PLATANO = ITEMS.register("platano",
-            () -> new Platano(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new Platano(new Item.Properties()));
     public static final RegistryObject<Item> KAZAN = ITEMS.register("kazan",
-            () -> new Kazan(new Item.Properties().tab(ModCreativeModeTab.SAMOD_TAB).stacksTo(1)));
+            () -> new Kazan(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

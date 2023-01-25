@@ -9,6 +9,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+
+
 public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENT_DEFERRED_REGISTER =
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, SaMod.MOD_ID);
@@ -29,7 +31,7 @@ public class ModSounds {
             registerSoundEvent("kazan_sound");
 
     public static final RegistryObject<SoundEvent> registerSoundEvent(String name){
-        return SOUND_EVENT_DEFERRED_REGISTER.register(name, () -> new SoundEvent(new ResourceLocation(SaMod.MOD_ID, name)));
+        return SOUND_EVENT_DEFERRED_REGISTER.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SaMod.MOD_ID, name)));
     }
     public static void register(IEventBus eventBus){
         SOUND_EVENT_DEFERRED_REGISTER.register(eventBus);
