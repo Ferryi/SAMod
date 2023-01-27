@@ -5,6 +5,7 @@ import es.ferry.samod.block.ModBlocks;
 import es.ferry.samod.item.ModCreativeModeTab;
 import es.ferry.samod.item.ModItems;
 import es.ferry.samod.sound.ModSounds;
+import es.ferry.samod.world.dimension.ModDimensions;
 import es.ferry.samod.world.feature.ModConfiguredFeatures;
 import es.ferry.samod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
@@ -50,6 +51,7 @@ public class SaMod
         //ModConfiguredFeatures.register(modEventBus);
         //ModPlacedFeatures.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModDimensions.register();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
