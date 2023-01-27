@@ -16,6 +16,11 @@ public class ModDimensions {
     public static final ResourceKey<DimensionType> SECTOR1_TYPE =
             ResourceKey.create(Registries.DIMENSION_TYPE, SECTOR1_KEY.location());
 
+    public static final ResourceKey<Level> SECTOR_HIELO_KEY = ResourceKey.create(Registries.DIMENSION,
+            new ResourceLocation(SaMod.MOD_ID, "sector_hielo"));
+    public static final ResourceKey<DimensionType> SECTOR_HIELO_TYPE =
+        ResourceKey.create(Registries.DIMENSION_TYPE, SECTOR_HIELO_KEY.location());
+
 
     public static void register() {
         System.out.println("Registering ModDimensions for " + SaMod.MOD_ID);
